@@ -1,4 +1,4 @@
--- auto install packer if not installed
+-- auto install packer if no--[[ t installed ]]
 local ensure_packer = function()
   local fn = vim.fn
   local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
@@ -27,10 +27,29 @@ end
 return packer.startup(function(use)
   use("wbthomason/packer.nvim")
 
+  use("nvim-lua/plenary.nvim")
+  -- many plugins use this
   use("bluz71/vim-nightfly-guicolors")
 
   -- tmux & split window navigation
   use("christoomey/vim-tmux-navigator")
+  use("szw/vim-maximizer") -- maximize and restore current window
+ 
+  -- essential plugins
+  use("tpope/vim-surround")
+  use("vim-scripts/ReplaceWithRegister")
+
+  -- commenting with gc
+  use("numToStr/Comment.nvim")
+
+  use("nvim-tree/nvim-tree.lua")
+
+  --icons
+  use("kyazdani42/nvim-web-devicons")
+
+  -- statusline
+  use("nvim-lualine/lualine.nvim")
+
 
 
 

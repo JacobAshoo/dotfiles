@@ -1,0 +1,2 @@
+[net]
+git_fetch_with_cli = true

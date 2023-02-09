@@ -45,6 +45,8 @@ exec_always --no-startup-id bash ~/.config/polybar/forest/launch.sh
 #set to 144hz
 exec_always --no-startup-id xrandr --output HDMI-0 --rate 144.00
 
+#replace caps lock with escape
+exec_always setxkbmap -option caps:escape
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

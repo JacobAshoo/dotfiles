@@ -7,7 +7,7 @@ keymap.set("i", "jk", "<ESC>")
 
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
-keymap.set("n", "x", '"_x')
+--keymap.set("n", "x", '"_x')
 
 -- window managment
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically

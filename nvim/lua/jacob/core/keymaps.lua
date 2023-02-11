@@ -7,7 +7,7 @@ keymap.set("i", "jk", "<ESC>")
 
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
---keymap.set("n", "x", '"_x')
+keymap.set("n", "x", '"_x')
 
 -- window managment
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
@@ -43,3 +43,7 @@ keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current c
 
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
+
+--harpoon
+keymap.set("n", "<leader>t1", ':lua require("harpoon.term").gotoTerminal(1)<cr>i')
+keymap.set("t", "<leader>x", "exit<CR><CR>")

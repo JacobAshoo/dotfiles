@@ -92,7 +92,7 @@ return packer.startup(function(use)
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
-
+	use("ThePrimeagen/harpoon")
 	-- stuff
 	use("j-hui/fidget.nvim")
 	if packer_bootstrap then

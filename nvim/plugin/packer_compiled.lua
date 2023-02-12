@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/jacob/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["NeoTerm.lua"] = {
+    loaded = true,
+    path = "/home/jacob/.local/share/nvim/site/pack/packer/start/NeoTerm.lua",
+    url = "https://github.com/nyngwang/NeoTerm.lua"
+  },
   ReplaceWithRegister = {
     loaded = true,
     path = "/home/jacob/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",

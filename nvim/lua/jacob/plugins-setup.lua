@@ -95,6 +95,8 @@ return packer.startup(function(use)
 	use("ThePrimeagen/harpoon")
 	-- stuff
 	use("j-hui/fidget.nvim")
+	use("nyngwang/NeoTerm.lua")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

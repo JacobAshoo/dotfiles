@@ -96,6 +96,7 @@ return packer.startup(function(use)
 	-- stuff
 	use("j-hui/fidget.nvim")
 	use("nyngwang/NeoTerm.lua")
+	use("matbme/JABS.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()

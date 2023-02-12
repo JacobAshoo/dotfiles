@@ -39,13 +39,13 @@ local capabilities = cmp_nvim_lsp.default_capabilities()
 
 -- Change the Diagnostic symbols in the sign column (gutter)
 -- (not in youtube nvim video)
-local signs = { Error = " ", Warn = " ", Hint = "ﴞ ", Info = " " }
+local signs = { Error = " ", Warn = " ", Hint = "🗲", Info = " " }
 for type, icon in pairs(signs) do
 	local hl = "DiagnosticSign" .. type
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
-vim.lsp.handlers["textDocument/publishDiagnostics"] = function() end
+--vim.lsp.handlers["textDocument/publishDiagnostics"] = function() end
 -- configure emmet language server
 lspconfig["emmet_ls"].setup({
 	capabilities = capabilities,

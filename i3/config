@@ -78,8 +78,8 @@ bindsym $mod+d exec --no-startup-id dmenu_run -b
 #window boarder
 for_window [class="^.*"] border pixel 0
 
-#open chrome
-bindsym $mod+g exec google-chrome-stable
+#open firefox 
+bindsym $mod+g exec firefox
 #open nautilus
 bindsym $mod+o exec nautilus
 #open htop
@@ -99,7 +99,7 @@ bindsym $mod+Shift+n gaps inner current minus 5
 #TODO
 
 #lofi music
-bindsym $mod+a exec google-chrome-stable https://www.youtube.com/watch?v=jfKfPfyJRdk
+bindsym $mod+a exec firefox https://www.youtube.com/watch?v=jfKfPfyJRdk
 
 #transparent window
 bindsym $mod+t exec transparent_window.sh

@@ -97,7 +97,8 @@ return packer.startup(function(use)
 	use("j-hui/fidget.nvim")
 	use("nyngwang/NeoTerm.lua")
 	use("matbme/JABS.nvim")
-
+	use("simrat39/rust-tools.nvim")
+	use("simrat39/inlay-hints.nvim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end

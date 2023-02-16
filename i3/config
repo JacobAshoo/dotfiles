@@ -78,8 +78,8 @@ bindsym $mod+d exec --no-startup-id dmenu_run -b
 #window boarder
 for_window [class="^.*"] border pixel 0
 
-#open vivaldi
-bindsym $mod+g exec vivaldi-stable
+#open firefox
+bindsym $mod+g exec firefox
 #open nautilus
 bindsym $mod+o exec nautilus
 #open htop

@@ -99,6 +99,8 @@ return packer.startup(function(use)
 	use("matbme/JABS.nvim")
 	use("simrat39/rust-tools.nvim")
 	use("simrat39/inlay-hints.nvim")
+	use("ahmedkhalf/project.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

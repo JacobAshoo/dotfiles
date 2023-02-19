@@ -100,7 +100,7 @@ return packer.startup(function(use)
 	use("simrat39/rust-tools.nvim")
 	use("simrat39/inlay-hints.nvim")
 	use("ahmedkhalf/project.nvim")
-
+	use("lukas-reineke/indent-blankline.nvim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end

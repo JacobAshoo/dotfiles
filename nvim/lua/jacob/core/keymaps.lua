@@ -50,3 +50,6 @@ keymap.set("t", "<leader>x", "exit<CR><CR>")
 
 -- jabs
 keymap.set("n", "<leader>j", ":JABSOpen<CR>")
+
+--hop
+keymap.set("n", "<leader>hw", ":HopWord<CR>")

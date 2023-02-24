@@ -102,6 +102,7 @@ return packer.startup(function(use)
 	use("ahmedkhalf/project.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
 	use("phaazon/hop.nvim")
+	use("simrat39/symbols-outline.nvim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end

@@ -53,3 +53,6 @@ keymap.set("n", "<leader>j", ":JABSOpen<CR>")
 
 --hop
 keymap.set("n", "<leader>hw", ":HopWord<CR>")
+
+-- symbols-outline
+keymap.set("n", "<leader>so", ":SymbolsOutline<Cr>")

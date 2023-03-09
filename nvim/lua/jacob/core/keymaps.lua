@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
--- general keymaps
+-- general keymap
 keymap.set("i", "jk", "<ESC>")
 
 keymap.set("n", "<leader>nh", ":nohl<CR>")
@@ -17,10 +17,12 @@ keymap.set("n", "<leader>sx", ":close<CR>", { desc = "close current window" }) -
 
 keymap.set("n", "<leader>to", ":tabnew<CR>", { desc = "open new tab" }) -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>", { desc = "close current tab" }) -- close current tab
-keymap.set("n", "<leader>2", ":tabn<CR>", { desc = "go to next tab" }) --  go to next tab
-keymap.set("n", "<leader>1", ":tabp<CR>", { desc = "go to prev tab" }) --  go to previous tab
 
--- plugin keymaps
+-- delete buffer
+keymap.set("n", "<leader>db", ":bd<CR>", { desc = "delete buffer" })
+keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "delete buffer" })
+
+-- plugin keymap
 
 --vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>", { desc = "max or min split window" }) -- maximize or unmax split window
@@ -61,3 +63,16 @@ keymap.set("n", "<leader>hw", ":HopWord<CR>", { desc = "hop to word [hop]" })
 
 -- symbols-outline
 keymap.set("n", "<leader>so", ":SymbolsOutline<Cr>", { desc = "veiw symbols [SymbolsOutline]" })
+
+-- cokline
+keymap.set("n", "<S-Tab>", "<Plug>(cokeline-focus-prev)", { silent = true, desc = "next buffer [cokeline]" })
+keymap.set("n", "<Tab>", "<Plug>(cokeline-focus-next)", { silent = true, desc = "prev buffer [cokeline]" })
+
+for i = 1, 9 do
+	keymap.set(
+		"n",
+		("<Leader>%s"):format(i),
+		("<Plug>(cokeline-focus-%s)"):format(i),
+		{ silent = true, desc = "focus on buffer i [cokeline]" }
+	)
+end

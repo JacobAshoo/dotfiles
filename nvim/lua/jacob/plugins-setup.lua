@@ -105,6 +105,7 @@ return packer.startup(function(use)
 	use("simrat39/symbols-outline.nvim")
 	use("folke/which-key.nvim")
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
+	use("noib3/nvim-cokeline")
 	if packer_bootstrap then
 		require("packer").sync()
 	end

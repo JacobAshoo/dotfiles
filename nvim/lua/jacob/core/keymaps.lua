@@ -2,18 +2,13 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
--- general keymap
-keymap.set("i", "jk", "<ESC>")
-
 keymap.set("n", "<leader>nh", ":nohl<CR>")
-
-keymap.set("n", "x", '"_x')
 
 -- window managment
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "split window horizontally" }) -- split horizontally
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "set windows equals sizes" }) -- equal width and height
-keymap.set("n", "<leader>sx", ":close<CR>", { desc = "close current window" }) -- close current split window
+keymap.set("n", "<leader>x", ":close<CR>", { desc = "close current window" }) -- close current split window
 
 keymap.set("n", "<leader>to", ":tabnew<CR>", { desc = "open new tab" }) -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>", { desc = "close current tab" }) -- close current tab
@@ -76,3 +71,12 @@ for i = 1, 9 do
 		{ silent = true, desc = "focus on buffer i [cokeline]" }
 	)
 end
+
+-- toggleterm
+keymap.set("n", "<leader><Tab>", ":ToggleTerm<CR>", { desc = "open terminal [ToggelTerm]" })
+keymap.set("t", "<esc>", [[<C-\><C-n>]], { desc = "exit terminal mode" })
+keymap.set("t", "<C-h>", [[<Cmd>wincmd h<CR>]], { desc = "focus left" })
+keymap.set("t", "<C-j>", [[<Cmd>wincmd j<CR>]], { desc = "focus down" })
+keymap.set("t", "<C-k>", [[<Cmd>wincmd k<CR>]], { desc = "focus up" })
+keymap.set("t", "<C-l>", [[<Cmd>wincmd l<CR>]], { desc = "move focus right" })
+keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]])

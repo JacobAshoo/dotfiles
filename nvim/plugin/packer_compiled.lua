@@ -99,11 +99,6 @@ _G.packer_plugins = {
     path = "/home/jacob/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/home/jacob/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/jacob/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -270,6 +265,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jacob/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/jacob/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["vim-maximizer"] = {
     loaded = true,

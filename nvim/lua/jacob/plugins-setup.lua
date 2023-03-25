@@ -106,6 +106,7 @@ return packer.startup(function(use)
 	use("folke/which-key.nvim")
 	use("akinsho/toggleterm.nvim")
 	use("noib3/nvim-cokeline")
+	use("kylechui/nvim-surround")
 	if packer_bootstrap then
 		require("packer").sync()
 	end

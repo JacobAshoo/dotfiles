@@ -80,3 +80,6 @@ keymap.set("t", "<C-j>", [[<Cmd>wincmd j<CR>]], { desc = "focus down" })
 keymap.set("t", "<C-k>", [[<Cmd>wincmd k<CR>]], { desc = "focus up" })
 keymap.set("t", "<C-l>", [[<Cmd>wincmd l<CR>]], { desc = "move focus right" })
 keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]])
+
+--misc
+keymap.set("n", "<C-O>", "<C-O><Cr>zz")

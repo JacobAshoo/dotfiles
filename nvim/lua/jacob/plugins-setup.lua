@@ -93,20 +93,47 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 	use("ThePrimeagen/harpoon")
-	-- stuff
+
+	--cool status thing in bottom right
 	use("j-hui/fidget.nvim")
+
+	--terminal
 	use("nyngwang/NeoTerm.lua")
+
+	--bufffer viwer
 	use("matbme/JABS.nvim")
+
+	--rust stuff
 	use("simrat39/rust-tools.nvim")
+
+	--type hints
 	use("simrat39/inlay-hints.nvim")
+
+	--project handler
 	use("ahmedkhalf/project.nvim")
+
+	--indent stuff
 	use("lukas-reineke/indent-blankline.nvim")
+
+	--word hoping
 	use("phaazon/hop.nvim")
+
+	--symbols
 	use("simrat39/symbols-outline.nvim")
+
+	--keymap help
 	use("folke/which-key.nvim")
+
+	--terminal
 	use("akinsho/toggleterm.nvim")
+
+	--bufferline
 	use("noib3/nvim-cokeline")
+
+	--suround stuff
 	use("kylechui/nvim-surround")
+
+	--git conflict resolver
 	use({
 		"akinsho/git-conflict.nvim",
 		tag = "*",

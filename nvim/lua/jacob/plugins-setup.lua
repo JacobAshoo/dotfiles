@@ -107,6 +107,13 @@ return packer.startup(function(use)
 	use("akinsho/toggleterm.nvim")
 	use("noib3/nvim-cokeline")
 	use("kylechui/nvim-surround")
+	use({
+		"akinsho/git-conflict.nvim",
+		tag = "*",
+		config = function()
+			require("git-conflict").setup()
+		end,
+	})
 	use("karb94/neoscroll.nvim")
 	if packer_bootstrap then
 		require("packer").sync()
